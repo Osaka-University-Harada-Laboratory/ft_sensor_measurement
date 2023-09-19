@@ -17,7 +17,7 @@ meanrange = 3
 pubraw = rospy.Publisher("ftsensor_raw", Float32MultiArray, queue_size=10)
 pubmean = rospy.Publisher("ftsensor_mean", Float32MultiArray, queue_size=10)
 
-ftsensor = FTsensor(ip="10.0.1.93")
+ftsensor = FTsensor(ip="100.80.147.6")
 
 while True:
   c_ft = ftsensor.get_latest_data()
